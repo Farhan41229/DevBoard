@@ -26,10 +26,10 @@
       <!-- Theme Header Part -->
       <div class="flex items-center space-x-6">
         <div
-          class="flex gap-3 items-center bg-blue-50 p-4 rounded-full justify-between"
+          class="w-[123px] flex gap-3 items-center bg-blue-50 p-4 rounded-full justify-between"
         >
           <img src="./assets/checkbox.png" alt="" />
-          <h1 class="text-[32px] font-bold w-[42px]">23</h1>
+          <h1 id="Finished-Tasks" class="text-[32px] font-bold w-[42px]">23</h1>
         </div>
         <img
           class="bg-[#F4F7FF] p-4 rounded-full"
@@ -57,7 +57,9 @@
             />
             <div>
               <p class="text-black/50 font-bold">Task Assigned</p>
-              <h1 class="text-[32px] font-bold">05</h1>
+              <h1 class="text-[32px] font-bold">
+                0<span id="Assigned-Tasks">5</span>
+              </h1>
             </div>
           </div>
           <!-- Card - 2 -->
@@ -104,6 +106,7 @@
                 <h3 class="font-bold">21 March 2025</h3>
               </div>
               <button
+                id="task-1-btn"
                 class="p-3 bg-[#3752FD] rounded-xl text-white w-[130px] border-none hover:bg-blue-700"
               >
                 Completed
@@ -132,6 +135,7 @@
                 <h3 class="font-bold">21 March 2025</h3>
               </div>
               <button
+                id="task-2-btn"
                 class="p-3 bg-[#3752FD] rounded-xl text-white w-[130px] border-none hover:bg-blue-700"
               >
                 Completed
@@ -160,6 +164,7 @@
                 <h3 class="font-bold">21 March 2025</h3>
               </div>
               <button
+                id="task-3-btn"
                 class="p-3 bg-[#3752FD] rounded-xl text-white w-[130px] border-none hover:bg-blue-700"
               >
                 Completed
@@ -188,6 +193,7 @@
                 <h3 class="font-bold">21 March 2025</h3>
               </div>
               <button
+                id="task-4-btn"
                 class="p-3 bg-[#3752FD] rounded-xl text-white w-[130px] border-none hover:bg-blue-700"
               >
                 Completed
@@ -216,6 +222,7 @@
                 <h3 class="font-bold">21 March 2025</h3>
               </div>
               <button
+                id="task-5-btn"
                 class="p-3 bg-[#3752FD] rounded-xl text-white w-[130px] border-none hover:bg-blue-700"
               >
                 Completed
@@ -244,6 +251,7 @@
                 <h3 class="font-bold">21 March 2025</h3>
               </div>
               <button
+                id="task-6-btn"
                 class="p-3 bg-[#3752FD] rounded-xl text-white w-[130px] border-none hover:bg-blue-700"
               >
                 Completed
@@ -253,7 +261,9 @@
         </section>
       </section>
       <!-- Activity Section -->
-      <section class="bg-white w-[366px] p-6 flex flex-col items-center">
+      <section
+        class="bg-white w-[366px] p-6 flex flex-col items-center rounded-xl"
+      >
         <div class="flex gap-4 mb-4">
           <img src="./assets/activity.png" alt="" />
           <h3>Activity Log</h3>
@@ -261,15 +271,9 @@
         <button class="bg-[#3752FD] p-3 text-white rounded-lg w-[125px] mb-10">
           Clear History
         </button>
-        <p class="bg-blue-50 p-[20px] rounded-lg mb-7">
-          You have Complete The Task Add Dark Mode at <span>12:48:15 PM</span>
-        </p>
-        <p class="bg-blue-50 p-[20px] rounded-lg mb-7">
-          You have Complete The Task Add Dark Mode at <span>12:48:15 PM</span>
-        </p>
       </section>
     </main>
   </body>
-  <script src="./scripts/tasks.js"></script>
   <script src="./utilities/utilities.js"></script>
+  <script src="./scripts/tasks.js"></script>
 </html>
