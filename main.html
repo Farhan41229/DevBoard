@@ -13,203 +13,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo Mobile</title>
   </head>
-  <body class="bg-slate-800">
-    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-100 border">
-      <header>
-        <!-- Nav Header Section -->
-        <nav class="flex justify-around items-center">
-          <img class="w-16" src="./assets/Group.png" alt="" />
-          <div>
-            <h1 class="text-3xl font-bold" id="Balance-check">$ 45000</h1>
-            <p class="border p-2 border-cyan-700 rounded">Available Balance</p>
-          </div>
-          <button class="btn">logout</button>
-        </nav>
-        <!-- Welcome To Payoo Section -->
-        <section class="border border-t-green-600 mt-10 p-5 bg-gray-100">
-          <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
-          <p class="text-black/50 mb-10">
-            Enjoy easy and convenient financial services with us. Cashout charge
-            is low and
-          </p>
-          <!-- Cards -->
-          <div class="cards grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-2">
-            <!-- Box - 1 -->
-            <div
-              class="box flex flex-col justify-center items-center gap-5 border border-gray-500 p-4 rounded-xl hover:border-blue-500 focus:border-blue-500 hover:text-blue-500 focus:text-blue-500"
-              id="ADD_MONEY_SWITCH"
-            >
-              <img src="./assets/wallet1.png" alt="" />
-              <h3>Add Money</h3>
-            </div>
-            <!-- Box - 2 -->
-            <div
-              class="box flex flex-col justify-center items-center gap-5 border border-gray-500 p-4 rounded-xl hover:border-blue-500 focus:border-blue-500 hover:text-blue-500 focus:text-blue-500"
-              id="CASHOUT_SWITCH"
-            >
-              <img src="./assets/send1.png" alt="" />
-              <h3>Cashout</h3>
-            </div>
-            <!-- Box - 3 -->
-            <div
-              class="box flex flex-col justify-center items-center gap-5 border border-gray-500 p-4 rounded-xl hover:border-blue-500 focus:border-blue-500 hover:text-blue-500 focus:text-blue-500"
-            >
-              <img src="./assets/money1.png" alt="" />
-              <h3 class="text-sm">Transfer Money</h3>
-            </div>
-            <!-- Box - 4 -->
-            <div
-              class="box flex flex-col justify-center items-center gap-5 border border-gray-500 p-4 rounded-xl hover:border-blue-500 focus:border-blue-500 hover:text-blue-500 focus:text-blue-500"
-            >
-              <img src="./assets/bonus1.png" alt="" />
-              <h3>Get Bonus</h3>
-            </div>
-            <!-- Box - 5 -->
-            <div
-              class="box flex flex-col justify-center items-center gap-5 border border-gray-500 p-4 rounded-xl hover:border-blue-500 focus:border-blue-500 hover:text-blue-500 focus:text-blue-500"
-            >
-              <img src="./assets/purse1.png" alt="" />
-              <h3>Pay Bill</h3>
-            </div>
-            <!-- Box - 6 -->
-            <div
-              class="box flex flex-col justify-center items-center gap-5 border border-gray-500 p-4 rounded-xl hover:border-blue-500 focus:border-blue-500 hover:text-blue-500 focus:text-blue-500"
-            >
-              <img src="./assets/transaction1.png" alt="" />
-              <h3>Transactions</h3>
-            </div>
-          </div>
-        </section>
-        <!-- Add Money Section -->
-        <section id="add_money-section" class="mt-24 p-5">
-          <h2 class="text-2xl font-bold text-center text-blue-700">
-            Add Money
-          </h2>
-          <!-- Add Money Form  Start !!!!! -->
-          <div class="">
-            <div class="hero-content flex-col lg:flex-row-reverse w-full">
-              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
-                <form class="card-body bg-gray-200 rounded-2xl">
-                  <!-- Select -->
-                  <legend class="font-bold">Select Bank</legend>
-                  <select
-                    class="select bg-[#F4F5F7] border border-gray-300 rounded-full"
-                  >
-                    <option disabled selected>Select A Bank</option>
-                    <option value="Bkash">Bkash</option>
-                    <option value="Nagad">Nagad</option>
-                    <option value="DBBL">DBBL</option>
-                  </select>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold"
-                        >Bank Account Number</span
-                      >
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="Enter 11 digit account number"
-                      id="Bank_Account_Number"
-                      class="input input-bordered rounded-full bg-[#F4F5F7] [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                      required
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold">Amount To Add</span>
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="Add Amount to Deposit"
-                      id="Deposit_Number"
-                      class="input input-bordered rounded-full bg-[#F4F5F7] [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                      required
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold">4 Digit Pin</span>
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Enter 4 Digit Pin"
-                      id="PIN_NUMBER"
-                      class="input input-bordered rounded-full bg-[#F4F5F7]"
-                      required
-                    />
-                  </div>
-                  <div class="form-control mt-6">
-                    <button
-                      id="Add_money-btn"
-                      class="btn btn-primary rounded-full bg-blue-700 font-bold"
-                    >
-                      Add money
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Cashout Section -->
-        <section id="cashout-section" class="mt-24 p-5">
-          <h2 class="text-2xl font-bold text-center text-blue-700">Cash Out</h2>
-          <!-- Cashout Form  Start !!!!! -->
-          <div class="">
-            <div class="hero-content flex-col lg:flex-row-reverse w-full">
-              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
-                <form class="card-body bg-gray-200 rounded-2xl">
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold">Agent Number</span>
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="Enter 11 digit number"
-                      id="Agnet_Number"
-                      class="input input-bordered rounded-full bg-[#F4F5F7] [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                      required
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold">Amount</span>
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="Enter Amount to Withdraw"
-                      id="Withdraw_Number"
-                      class="input input-bordered rounded-full bg-[#F4F5F7] [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                      required
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label class="label">
-                      <span class="label-text font-bold">Pin Number</span>
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Enter 4 Digit Pin Number of Agent"
-                      id="Agnet_PIN_NUMBER"
-                      class="input input-bordered rounded-full bg-[#F4F5F7]"
-                      required
-                    />
-                  </div>
-                  <div class="form-control mt-6">
-                    <button
-                      id="Cashout_money-btn"
-                      class="btn btn-primary rounded-full bg-blue-700 font-bold"
-                    >
-                      Add money
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </header>
+  <body class="bg-blue-50 p-6">
+    <!-- Header Section -->
+    <section
+      class="max-w-screen-2xl bg-white p-6 flex justify-between mx-auto rounded-2xl mb-7"
+    >
+      <!-- Logo Part -->
+      <div class="flex items-center gap-3">
+        <img class="w-[51.24px;] h-[51.24px;]" src="./assets/logo.png" alt="" />
+        <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <!-- Theme Header Part -->
+      <a href="./index.html"
+        ><button
+          class="bg-blue-600 p-5 rounded-2xl text-white w-[200px] hover:bg-blue-800"
+        >
+          Back to Desk
+        </button></a
+      >
     </section>
+    <!-- Main Section -->
+    <h1 class="text-center my-10 font-bold text-5xl">Blogs</h1>
+    <!-- Question 1 -->
+    <div class="max-w-screen-2xl bg-white p-6 mx-auto rounded-2xl mb-7">
+      <h2
+        class="font-bold text-2xl my-4 border-b border-dashed border-b-red-900 pb-5"
+      >
+        Question-1: What are the different ways to select an element in the DOM?
+      </h2>
+      <p>
+        We can grab elements in different ways depending on what we need. If an
+        element has an ID, we use getElementById(). For classes and tags,
+        getElementsByClassName() or getElementsByTagName() work. But the most
+        flexible options are querySelector() (for the first match) and
+        querySelectorAll() (for all matches).
+      </p>
+    </div>
+    <!-- Question 2 -->
+    <div class="max-w-screen-2xl bg-white p-6 mx-auto rounded-2xl mb-7">
+      <h2
+        class="font-bold text-2xl my-4 border-b border-dashed border-b-red-900 pb-5"
+      >
+        Question-2: What is the difference between innerHTML, innerText, and
+        textContent ?
+      </h2>
+      <p>
+        innerHTML gives us everything inside an element, including HTML tags.
+        innerText only gets the visible text, ignoring hidden elements.
+        textContent grabs all the text, whether it’s visible or not. If we're
+        dealing with raw text, textContent is usually the safer option.
+      </p>
+    </div>
+    <!-- Question 3 -->
+    <div class="max-w-screen-2xl bg-white p-6 mx-auto rounded-2xl mb-7">
+      <h2
+        class="font-bold text-2xl my-4 border-b border-dashed border-b-red-900 pb-5"
+      >
+        Question-3: What is event delegation in the DOM?
+      </h2>
+      <p>
+        Instead of adding event listeners to a bunch of individual elements, we
+        can attach one listener to a parent element and let events "bubble up"
+        from its children. This makes our code more efficient, especially for
+        dynamic elements.
+      </p>
+    </div>
+    <!-- Question 4 -->
+    <div class="max-w-screen-2xl bg-white p-6 mx-auto rounded-2xl mb-7">
+      <h2
+        class="font-bold text-2xl my-4 border-b border-dashed border-b-red-900 pb-5"
+      >
+        Question-4: What is event bubbling in the DOM?
+      </h2>
+      <p>
+        Event bubbling means that when we click on an element, the event doesn’t
+        just stay there—it moves up through its parent elements too. So if we
+        click a button inside a div, both the button and the div can react
+        unless we stop the event from bubbling up.
+      </p>
+    </div>
+    <!-- Question 5 -->
+    <div class="max-w-screen-2xl bg-white p-6 mx-auto rounded-2xl mb-7">
+      <h2
+        class="font-bold text-2xl my-4 border-b border-dashed border-b-red-900 pb-5"
+      >
+        Question-5: How do you create, add, and remove elements using
+        JavaScript?
+      </h2>
+      <p>
+        First, we create an element using document.createElement(). Then, we
+        attach it to the page with appendChild() or insertBefore(). If we need
+        to remove it, we use removeChild() or element.remove(). Simple as that!
+      </p>
+    </div>
   </body>
   <script src="./scripts/main.js"></script>
   <script src="./utilities/utilities.js"></script>
