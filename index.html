@@ -33,6 +33,7 @@
         </div>
         <img
           class="bg-[#F4F7FF] p-4 rounded-full"
+          id="Theme-Button"
           src="./assets/theme-btn.png"
           alt=""
         />
@@ -77,8 +78,9 @@
               <img class="" src="./assets/calender.png" alt="" />
             </div>
             <div>
-              <p class="text-black/50 font-bold text-[18px]">Wed,</p>
-              <h1 class="text-[18px] font-bold">Jul 28 2025</h1>
+              <p id="current-date" class="text-black/50 font-bold text-[22px]">
+                Wed,<br />Jul 28 2025
+              </p>
             </div>
           </div>
         </section>
@@ -91,7 +93,9 @@
             >
               ShopEase
             </h3>
-            <h1 class="font-bold text-2xl my-5">Fix Mobile Button Issue</h1>
+            <h1 id="task-1-heading" class="font-bold text-2xl my-5">
+              Fix Mobile Button Issue
+            </h1>
             <p
               class="w-[254px] h-[92px] bg-gray-50 p-4 overflow-hidden text-ellipsis mb-10 mt-5"
             >
@@ -120,7 +124,9 @@
             >
               CloudSync
             </h3>
-            <h1 class="font-bold text-2xl my-5">Add Dark Mode</h1>
+            <h1 id="task-2-heading" class="font-bold text-2xl my-5">
+              Add Dark Mode
+            </h1>
             <p
               class="w-[254px] h-[92px] bg-gray-50 p-4 overflow-hidden text-ellipsis mb-10 mt-5"
             >
@@ -149,7 +155,9 @@
             >
               SwiftPay
             </h3>
-            <h1 class="font-bold text-2xl my-5">Optimize Home page </h1>
+            <h1 id="task-3-heading" class="font-bold text-2xl my-5">
+              Optimize Home page 
+            </h1>
             <p
               class="w-[254px] h-[92px] bg-gray-50 p-4 overflow-hidden text-ellipsis mb-10 mt-5"
             >
@@ -178,7 +186,9 @@
             >
               Meta
             </h3>
-            <h1 class="font-bold text-2xl my-5">Add new emoji 🤲</h1>
+            <h1 id="task-4-heading" class="font-bold text-2xl my-5">
+              Add new emoji 🤲
+            </h1>
             <p
               class="w-[254px] h-[92px] bg-gray-50 p-4 overflow-hidden text-ellipsis mb-10 mt-5"
             >
@@ -207,7 +217,9 @@
             >
               Google LLC
             </h3>
-            <h1 class="font-bold text-2xl my-5">Integrate OpenAI API</h1>
+            <h1 id="task-5-heading" class="font-bold text-2xl my-5">
+              Integrate OpenAI API
+            </h1>
             <p
               class="w-[254px] h-[92px] bg-gray-50 p-4 overflow-hidden text-ellipsis mb-10 mt-5"
             >
@@ -236,7 +248,9 @@
             >
               Glassdoar
             </h3>
-            <h1 class="font-bold text-2xl my-5">Improve Job searching</h1>
+            <h1 id="task-6-heading" class="font-bold text-2xl my-5">
+              Improve Job searching
+            </h1>
             <p
               class="w-[254px] h-[92px] bg-gray-50 p-4 overflow-hidden text-ellipsis mb-10 mt-5"
             >
@@ -268,9 +282,13 @@
           <img src="./assets/activity.png" alt="" />
           <h3>Activity Log</h3>
         </div>
-        <button class="bg-[#3752FD] p-3 text-white rounded-lg w-[125px] mb-10">
+        <button
+          id="clear-history-btn"
+          class="bg-[#3752FD] p-3 text-white rounded-lg w-[125px] mb-10"
+        >
           Clear History
         </button>
+        <div id="Tasks-history-Container"></div>
       </section>
     </main>
   </body>
