@@ -154,8 +154,8 @@ clear_history_selector.addEventListener('click', (event) => {
 });
 
 // Theme Button Challenge
-document
-  .getElementById('Theme-Button')
-  .addEventListener('click', (event) => {
-    document.body.style.backgroundColor = getRandomHexColor();
-  });
+document.getElementById('Theme-Button').addEventListener('click', (event) => {
+  let colour = getRandomHexColor();
+  document.body.style.backgroundColor = colour;
+  document.getElementById('main-section').style.backgroundColor = colour;
+});
