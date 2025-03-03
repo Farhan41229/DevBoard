@@ -16,15 +16,17 @@
   <body class="bg-blue-50 p-6">
     <!-- Header Section -->
     <section
-      class="max-w-screen-2xl bg-white p-6 flex justify-between mx-auto rounded-2xl mb-7"
+      class="max-w-screen-2xl bg-white p-6 flex flex-col lg:flex-row justify-center items-center lg:justify-between mx-auto rounded-2xl mb-7"
     >
       <!-- Logo Part -->
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 mb-10 lg:mb-0">
         <img class="w-[51.24px;] h-[51.24px;]" src="./assets/logo.png" alt="" />
         <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
       </div>
       <!-- Theme Header Part -->
-      <div class="flex items-center space-x-6">
+      <div
+        class="flex lg:flex-row flex-col space-y-5 lg:space-y-0 items-center lg:space-x-6"
+      >
         <div
           class="w-[123px] flex gap-3 items-center bg-blue-50 p-4 rounded-full justify-between"
         >
@@ -41,13 +43,13 @@
     </section>
     <!-- Main Section -->
     <main
-      class="max-w-screen-2xl bg-blue-50 mx-auto flex justify-between gap-4"
+      class="max-w-screen-2xl bg-blue-50 mx-auto flex flex-col-reverse lg:flex-row justify-between gap-4"
     >
       <!-- Tasks Section -->
       <section class="bg-white rounded-lg p-6 flex-1">
         <!-- Top banner section -->
         <section
-          class="grid grid-cols-4 gap-5 mb-14 border-b-4 border-dashed pb-10"
+          class="grid grid-cols-1 gap-y-5 lg:grid-cols-4 lg:gap-5 mb-14 border-b-4 border-dashed pb-10"
         >
           <!-- Card - 1 -->
           <div
@@ -89,7 +91,7 @@
           </div>
         </section>
         <!-- Main Tasks Section -->
-        <section class="grid grid-cols-3 gap-7">
+        <section class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-7">
           <!-- Card-1 -->
           <section class="bg-blue-50 p-6 rounded-2xl">
             <h3
@@ -280,7 +282,7 @@
       </section>
       <!-- Activity Section -->
       <section
-        class="bg-white w-[366px] p-6 flex flex-col items-center rounded-xl"
+        class="bg-white lg:w-[366px] p-6 flex flex-col items-center rounded-xl"
       >
         <div class="flex gap-4 mb-8">
           <img src="./assets/activity.png" alt="" />
