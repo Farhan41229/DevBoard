@@ -131,30 +131,11 @@ This project demonstrates:
 
 ## 🌟 Screenshots
 
-*Note: Screenshots would be added here to showcase the application's interface*
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Farhan** - [GitHub Profile](https://github.com/farhan41229)
+**Farhan41229** - [GitHub Profile](https://github.com/farhan41229)
 
-## 🙏 Acknowledgments
 
-- Programming Hero for the project requirements
-- Tailwind CSS team for the amazing utility-first CSS framework
-- DaisyUI for the beautiful component library
-
----
 
 **⭐ Star this repository if you found it helpful!**
